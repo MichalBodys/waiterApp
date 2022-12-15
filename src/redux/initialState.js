@@ -19,7 +19,7 @@ const initialState = {
 
            {
                 id: 3,
-                status: 'Busy',
+                status: "Busy",
                 peopleAmount: 3,
                 maxPeopleAmount: 5,
                 bill: 110
