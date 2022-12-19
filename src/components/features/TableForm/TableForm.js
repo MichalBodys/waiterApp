@@ -9,9 +9,10 @@ import { getAllStatuses } from '../../../redux/statusesRedux';
 import { Form, Button, Container, Col} from 'react-bootstrap';
 
 const TableForm = () => {
+  const statusOptions = useSelector(getAllStatuses);
+
   const { id }  = useParams();
   const tableData = useSelector(state => getTableById(state, parseInt(id)));
-  const statusOptions = useSelector(getAllStatuses);
   const [status, setStatus] = useState(tableData.status);
   const [peopleAmount, setPeopleAmount] = useState(tableData.peopleAmount);
   const [maxPeopleAmount, setMaxPeopleAmount] = useState(tableData.maxPeopleAmount);
