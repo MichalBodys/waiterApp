@@ -84,7 +84,7 @@ const TableForm = () => {
             </Form.Group>
           </div>
       </Form>
-      <Button onClick={update} className="mt-2" type="submit">Update</Button>
+      <Button onClick={update} className="mt-2">Update</Button>
       </Col>
     </Container>
     </div>

@@ -5,7 +5,11 @@ import{ ListGroup, Spinner } from 'react-bootstrap';
 
 
 const Tables = () => {
+
+
   const tables = useSelector(state => getAllTables(state));
+
+
   if (tables.length === 0) return (
     <div className="d-flex align-items-center">
       <Spinner  animation="border" variant="primary" />
